@@ -1,0 +1,225 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+/* Header */
+.main-header {
+    background: linear-gradient(to right, #1E90FF, #1C86EE);
+    color: white;
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+.main-header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.main-header p {
+    font-size: 1.2rem;
+    margin: 0.5rem 0 0;
+}
+
+/* Main Content */
+.content {
+    padding: 2rem 1rem;
+    max-width: 900px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Section */
+.form-section {
+    background: white;
+    padding: 2rem 1rem;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+
+.search-form .form-group {
+    margin-bottom: 1.5rem;
+}
+
+.search-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.search-form input,
+.search-form select,
+.search-form button {
+    width: 100%;
+    padding: 0.9rem;
+    font-size: 1rem;
+    margin: 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+.search-form input:focus,
+.search-form select:focus {
+    border-color: #1E90FF;
+    box-shadow: 0 0 5px rgba(30, 144, 255, 0.3);
+}
+
+.search-form select {
+    appearance: none;
+    background: white url('data:image/svg+xml;charset=US-ASCII,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4 5"><path fill="%23333" d="M2 0L0 2h4zm0 5L0 3h4z"/></svg>') no-repeat right 0.75rem center;
+    background-size: 0.65em auto, 100%;
+    padding-right: 2.5rem;
+}
+
+/* Updated Button Styling */
+.search-form button {
+    background: #1E90FF;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    border-radius: 25px;
+    padding: 0.9rem 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.search-form button:hover {
+    background: #1C86EE;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Results Section */
+.results-section {
+    padding: 2rem 1rem;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.results-container p {
+    font-size: 1.1rem;
+    color: #666;
+}
+
+.results-container ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.results-container li {
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.results-container li:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.results-container h3 {
+    margin: 0;
+    font-size: 1.4rem;
+    color: #333;
+}
+
+.results-container p {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+}
+
+.results-container .details {
+    padding: 1rem;
+    background: #fff;
+    border-radius: 6px;
+    margin-top: 1rem;
+    display: none;
+}
+
+.results-container .details canvas {
+    max-width: 300px; /* Set maximum width */
+    max-height: 300px; /* Set maximum height */
+    width: 100%;
+    height: auto;
+    margin-top: 1rem;
+}
+
+
+
+/* Footer */
+.main-footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 2rem;
+    font-size: 1rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .main-header h1 {
+        font-size: 2rem;
+    }
+
+    .main-header p {
+        font-size: 1rem;
+    }
+
+    .content,
+    .form-section,
+    .results-section {
+        padding: 1.5rem 1rem;
+    }
+
+    .results-container p,
+    .results-container h3 {
+        font-size: 1.2rem;
+    }
+
+    .results-container li {
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .main-header h1 {
+        font-size: 1.5rem;
+    }
+
+    .main-header p {
+        font-size: 0.9rem;
+    }
+
+    .content,
+    .form-section,
+    .results-section {
+        padding: 1rem 0.5rem;
+    }
+
+    .results-container p,
+    .results-container h3 {
+        font-size: 1rem;
+    }
+
+    .results-container li {
+        padding: 0.8rem;
+    }
+}
